@@ -10,7 +10,7 @@ Push all current changes to GitHub:
 2. Run `git log --oneline -3` to match the repo's commit message style.
 3. If `$ARGUMENTS` is provided, use it as the commit message. Otherwise generate a concise conventional commit message (feat/fix/refactor/chore) based on the diff — focus on the "why", not the "what".
 4. Stage all changed files with `git add` (specific files, not `git add -A` blindly — exclude any .env or secrets).
-5. Commit using:
+5. Commit using the command below. Do NOT append any `Co-Authored-By` trailer:
    ```
    git commit --author="Claude <claude@anthropic.com>" -m "<message>"
    ```
